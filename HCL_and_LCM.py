@@ -24,6 +24,8 @@ else:
     print("--------------------")
 
 # Using the Euclidean Algorithm
+# In this algorithm, we divide the greater by smaller and take the remainder. 
+# Now, divide the smaller by this remainder. Repeat until the remainder is 0.
 def compute_hcf(x, y):
     while(y):
         x, y = y, x%y
@@ -31,3 +33,7 @@ def compute_hcf(x, y):
 
 hcf = compute_hcf(300, 400)
 print("The HCF is ",hcf)
+
+# For example, if we want to find the H.C.F. of 54 and 24, 
+# we divide 54 by 24. The remainder is 6. Now, we divide 24 by 6 and the remainder is 0. 
+# Hence, 6 is the required H.C.F.
